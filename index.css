@@ -72,8 +72,8 @@ header {
 }
 
 #navbar.scrolled {
-  background-color: #333;
-  /* color: white; */
+  background-color: #808080;
+  color: white;
   box-shadow: 0px 4px 7px #777;
   border-bottom: 1px solid #777;
 }
@@ -206,33 +206,59 @@ header {
   border-radius: 10px;
 }
 
-/* offers section */
-.offers-container {
+/* review section */
+.review-container {
   width: 80%;
-  height: 400px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   margin: auto;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 100px;
 }
 
-.offers-container h3 {
+.review-container h3 {
   margin-top: 20px;
 }
 
-.offer-group {
+.review-group {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.offers-item {
-  width: 300px;
-  height: 300px;
-  background-color: blue;
-  border-radius: 10px;
+.review-item {
+  width: 350px;
+  height: 200px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 7px #777;
+  gap: 10px;
+  color: #808080;
 }
+
+.review-card-header{
+    width: 280px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.review-card-image{
+    width: 34px;
+    height: 34px;
+    border-radius: 50px;
+}
+
+.review-card-body p{
+    width: 280px;
+}
+
 
 /* contact section */
 .contact-container {
@@ -408,9 +434,10 @@ form button{
     gap: 8px;
 }
 
-hr{
+.footer-hr{
     width: 100%;
-    background-color: gray;
+    height: 1px;
+    border-bottom: 1px solid #333;
 }
 
 .bottom-centent{
