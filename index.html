@@ -14,17 +14,141 @@
   </head>
   <body>
     <div class="container">
-      <div class="navbar">
-        <span class="logo">Logo</span>
-        <nav class="navlink-container">
-          <ul class="nav-links">
-            <li>Home</li>
-            <li>Services</li>
-            <li>About</li>
-            <li>Contact</li>
-          </ul>
+      <!-- navbar section -->
+      <header>
+        <nav id="navbar">
+          <div class="navbar-content">
+            <div class="logo">
+              <a href="">TRAVEL</a>
+            </div>
+            <div class="nav-links">
+              <a href="#home">Home</a>
+              <a href="#services">Services</a>
+              <a href="#about">About</a>
+              <a href="#contact">Contact</a>
+            </div>
+            <div class="burger-menu">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+            <div class="mobile-menu hide">
+              <a class="menu-item" href="#home">Home</a>
+              <a class="menu-item" href="#services">Services</a>
+              <a class="menu-item" href="#about">About</a>
+              <a class="menu-item" href="#contact">Contact</a>
+            </div>
+          </div>
         </nav>
+      </header>
+      <!-- hero section -->
+      <div class="hero-container" id="home">
+        <img
+          class="hero-image"
+          src="/assets//images//hero_image.jpg"
+          alt="hero image"
+        />
       </div>
+      <!-- main section -->
+      <div class="popular-section">
+        <div>
+          <h3>Popular destinations</h3>
+        </div>
+        <div class="popular-group">
+          <div class="popular-images">
+            <img src="./assets//images//popular_image1.jpg" alt="" />
+          </div>
+          <div class="popular-images">
+            <img src="./assets//images//popular_image2.jpg" alt="" />
+          </div>
+          <div class="popular-images">
+            <img src="./assets//images//popular_image3.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- services section -->
+      <div class="services-container" id="services">
+        <div class="services-header">
+          <h4>Services</h4>
+        </div>
+        <div class="services-details">
+          <div class="service-left-image">
+            <img src="./assets/images/service_image1.jpg" alt="service-image" />
+          </div>
+          <div class="service-group">
+            <div class="service-image">
+              <img
+                src="./assets/images/service_image2.jpg"
+                alt="service-image"
+              />
+            </div>
+            <div class="service-image">
+              <img
+                src="./assets/images/service_image3.jpg"
+                alt="service-image"
+              />
+            </div>
+            <div class="service-image">
+              <img
+                src="./assets/images/service_image4.jpg"
+                alt="service-image"
+              />
+            </div>
+            <div class="service-image">
+              <img
+                src="./assets/images/service_image5.jpg"
+                alt="service-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- offer section -->
+      <div class="offers-container">
+        <div>
+          <h3>What we offer</h3>
+        </div>
+        <div class="offer-group">
+          <div class="offers-item"></div>
+          <div class="offers-item"></div>
+          <div class="offers-item"></div>
+        </div>
+      </div>
+      <!-- contact section -->
+      <div class="contact-container" id="contact">
+        <div class="form-container">
+          <h4>Get in touch</h4>
+          <form action="">
+            <div class="form-field">
+              <label for="">Full name</label>
+              <input type="text" />
+            </div>
+            <div class="form-field">
+              <label for="">Email</label>
+              <input type="text" />
+            </div>
+            <div class="form-field">
+              <label for="">Contact</label>
+              <input type="text" />
+            </div>
+            <div class="form-field">
+              <label for="">Subject</label>
+              <input type="text" />
+            </div>
+            <div class="form-field">
+              <label for="">Message</label>
+              <input type="text" />
+            </div>
+            <div>
+              <button>Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- footer section -->
+      <footer>
+        <div></div>
+      </footer>
     </div>
     <script src="/index.js"></script>
   </body>
