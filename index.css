@@ -279,7 +279,7 @@ form input {
   border-radius: 10px;
 }
 
-form button {
+.contact-button {
   width: 200px;
   height: 30px;
   border: none;
@@ -293,11 +293,150 @@ form button {
 /* footer section */
 footer {
   width: 100%;
-  height: 200px;
+  height: 250px;
   padding: 0;
   margin: 0;
   background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.footer-content{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.aboutus{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.aboutus p{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: #333;
+}
+
+.contactinfo{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contactinfo ul{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contactinfo ul li{
+    color: #333;
+    list-style: none;
+    font-size: 14px;
+}
+
+.footerLinks{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footerLinks ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: #333;
+}
+
+.footerLinks ul li{
+    list-style: none;
+}
+
+.newsletter{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter h4 {
+    width: 70%;
+}
+
+.newsletter p{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: #333;
+}
+
+.footerForm{
+    width: 70%;
+}
+
+.formInput{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    padding: 0;
+}
+
+form button{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    padding: 0;
+    
+}
+
+.footer-bottom{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+hr{
+    width: 100%;
+    background-color: gray;
+}
+
+.bottom-centent{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copyright p{
+    color: #333;
+}
+
+.social-icons{
+    width: 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    /* background-color: blue; */
+    /* border-radius: 10px; */
+}
+
 
 /* for Desktop view  */
 @media screen and (max-width: 600px) {
