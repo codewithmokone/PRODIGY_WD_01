@@ -15,6 +15,7 @@ for (let i = 0; i < menuItems.length; i++) {
     });
 }
 
+// Handles adding a class name to a navbar element
 window.addEventListener('scroll', () => {
     if (window.scrollY > 60){
         navBar.classList.add('scrolled');

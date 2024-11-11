@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/index.css" />
+    <script defer src="/index.js"></script>
     <title>Responsive Landing Page</title>
   </head>
   <body>
@@ -19,18 +20,17 @@
         <nav id="navbar">
           <div class="navbar-content">
             <div class="logo">
-              <a href="">TRAVEL</a>
+              <a href="#home">TRAVEL</a>
             </div>
+
             <div class="nav-links">
-              <a href="#home">Home</a>
-              <a href="#services">Services</a>
-              <a href="#reviews">Reviews</a>
-              <a href="#contact">Contact</a>
+              <a href="#home" class="navLinks">Home</a>
+              <a href="#services" class="navLinks">Services</a>
+              <a href="#reviews" class="navLinks">Reviews</a>
+              <a href="#contact" class="navLinks">Contact</a>
             </div>
             <div class="burger-menu">
-              <span class="line"></span>
-              <span class="line"></span>
-              <span class="line"></span>
+              <img src="./assets/hamburger-svgrepo-com.png" alt="menu icon">
             </div>
             <div class="mobile-menu hide">
               <a class="menu-item" href="#home">Home</a>
@@ -41,6 +41,7 @@
           </div>
         </nav>
       </header>
+
       <!-- hero section -->
       <div class="hero-container" id="home">
         <img
@@ -49,6 +50,7 @@
           alt="hero image"
         />
       </div>
+
       <!-- main section -->
       <div class="popular-section">
         <div>
@@ -57,15 +59,19 @@
         <div class="popular-group">
           <div class="popular-images">
             <img src="./assets//images//popular_image1.jpg" alt="" />
+            <p class="popular-p1">Cape Town</p>
           </div>
           <div class="popular-images">
             <img src="./assets//images//popular_image2.jpg" alt="" />
+            <p class="popular-p2">Romania</p>
           </div>
           <div class="popular-images">
             <img src="./assets//images//popular_image3.jpg" alt="" />
+            <p class="popular-p3">Greece</p>
           </div>
         </div>
       </div>
+
       <!-- services section -->
       <div class="services-container" id="services">
         <div class="services-header">
@@ -103,7 +109,8 @@
           </div>
         </div>
       </div>
-      <!-- offer section -->
+
+      <!-- review section -->
       <div class="review-container" id="reviews">
         <div>
           <h3>What Our Customers Say?</h3>
@@ -112,7 +119,11 @@
           <div class="review-item">
             <div class="review-card-header">
               <div>
-                <img class="review-card-image" src="./assets/images/profile1.jpg" alt="" />
+                <img
+                  class="review-card-image"
+                  src="./assets/images/profile1.jpg"
+                  alt=""
+                />
               </div>
               <div>
                 <h4>Paul Markson</h4>
@@ -120,17 +131,21 @@
             </div>
             <div class="review-card-body">
               <p>
-                "I had an amazing experience! From the beginning, 
-                they were incredibly responsive and attentive to 
-                all my needs. They crafted a personalized itinerary 
-                for my family, balancing relaxation and adventure perfectly.
+                "I had an amazing experience! From the beginning, they were
+                incredibly responsive and attentive to all my needs. They
+                crafted a personalized itinerary for my family, balancing
+                relaxation and adventure perfectly.
               </p>
             </div>
           </div>
           <div class="review-item">
             <div class="review-card-header">
               <div>
-                <img class="review-card-image" src="./assets/images/profile2.jpg" alt="" />
+                <img
+                  class="review-card-image"
+                  src="./assets/images/profile2.jpg"
+                  alt=""
+                />
               </div>
               <div>
                 <h4>Tyla Clerk</h4>
@@ -138,17 +153,21 @@
             </div>
             <div class="review-card-body">
               <p>
-                "We got fantastic hotel options and smooth airport transfers, 
-                which made our trip worry-free. Special thanks to our agent, 
+                "We got fantastic hotel options and smooth airport transfers,
+                which made our trip worry-free. Special thanks to our agent,
                 Julia, who went above and beyond to make sure every detail was
-                 handled."
+                handled."
               </p>
             </div>
           </div>
           <div class="review-item">
             <div class="review-card-header">
               <div>
-                <img class="review-card-image" src="./assets/images/profile3.jpg" alt="" />
+                <img
+                  class="review-card-image"
+                  src="./assets/images/profile3.jpg"
+                  alt=""
+                />
               </div>
               <div>
                 <h4>Lewis More</h4>
@@ -156,46 +175,48 @@
             </div>
             <div class="review-card-body">
               <p>
-                "I recently used to plan a trip to. While the initial booking 
-                process was smooth and the staff was friendly,Loved working with 
-                travel! They made everything so easy, and the trip was perfect 
+                "I recently used to plan a trip to. While the initial booking
+                process was smooth and the staff was friendly,Loved working with
+                travel! They made everything so easy, and the trip was perfect
                 from start to finish."
               </p>
             </div>
           </div>
         </div>
       </div>
+
       <!-- contact section -->
       <div class="contact-container" id="contact">
         <div class="form-container">
           <h4>Get in touch</h4>
-          <form action="">
+          <form action="" autocomplete="on">
             <div class="form-field">
-              <label for="">Full name</label>
-              <input type="text" />
+              <label for="fname">Full name</label>
+              <input type="text" id="fname" name="fname" required />
             </div>
             <div class="form-field">
-              <label for="">Email</label>
-              <input type="text" />
+              <label for="emailAddress">Email</label>
+              <input type="email" id="emailAddress" name="emailAddress" required />
             </div>
             <div class="form-field">
-              <label for="">Contact</label>
-              <input type="text" />
+              <label for="contact">Contact</label>
+              <input type="number" id="contact" name="contact" required />
             </div>
             <div class="form-field">
-              <label for="">Subject</label>
-              <input type="text" />
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required />
             </div>
             <div class="form-field">
-              <label for="">Message</label>
-              <input type="text" />
+              <label for="message">Message</label>
+              <input type="text" id="message" name="message" required />
             </div>
             <div>
-              <button class="contact-button">Send</button>
+              <button class="contact-button" type="submit">Send</button>
             </div>
           </form>
         </div>
       </div>
+
       <!-- footer section -->
       <footer>
         <div class="footer-content">
@@ -231,9 +252,9 @@
           <div class="newsletter">
             <h4>Newsletter</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <form class="footerForm" action="">
-              <input class="formInput" type="text" />
-              <button>submit</button>
+            <form class="footerForm" action="" autocomplete="on">
+              <input class="formInput" type="text" id="subscribe" name="subscribe" />
+              <button>SUBSCRIBE</button>
             </form>
           </div>
         </div>
@@ -256,6 +277,5 @@
         </div>
       </footer>
     </div>
-    <script src="/index.js"></script>
   </body>
 </html>
