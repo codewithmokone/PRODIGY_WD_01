@@ -2,6 +2,7 @@ const burgerMenu = document.querySelector(".burger-menu");
 const mobileMenu = document.querySelector(".mobile-menu");
 const menuItems = document.getElementsByClassName("menu-item");
 const navBar = document.getElementById('navbar');
+const navLinks = document.querySelectorAll('.navLinks');
 
 // toggles the mobile menu
 burgerMenu.addEventListener('click', ()=> {

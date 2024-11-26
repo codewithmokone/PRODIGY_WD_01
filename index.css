@@ -64,10 +64,14 @@ body {
 }
 
 #navbar.scrolled {
-  background-color: #808080;
+  background-color: #0080FE;
   color: white;
   box-shadow: 0px 4px 7px #777;
   border-bottom: 1px solid #777;
+}
+
+#navbar.scrolled a {
+  color: white;
 }
 
 #navbar.scrolled a:hover {
@@ -279,8 +283,8 @@ body {
 /* contact section */
 .contact-container {
   /* width: 100%; */
-  height: 100%;
-  margin-top: 100px;
+  height: 600px;
+  /* margin-top: 100px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -492,7 +496,7 @@ footer {
     width: 90%;
     top: 3.8rem;
     left: 20px;
-    background-color: #777;
+    background-color: #0080FE;
     font-weight: 600;
     gap: 10px;
   }
@@ -516,7 +520,8 @@ footer {
     margin-right: -15px;
   }
 
-  .burger-menu img {
+  .burger-menu i {
+    color: white;
     width: 25px;
     height: 20px;
   }

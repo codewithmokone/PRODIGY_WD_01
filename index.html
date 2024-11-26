@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- External links -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/93dbfe216e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/index.css" />
     <script defer src="/index.js"></script>
     <title>Responsive Landing Page</title>
@@ -30,7 +32,7 @@
               <a href="#contact" class="navLinks">Contact</a>
             </div>
             <div class="burger-menu">
-              <img src="./assets/hamburger-svgrepo-com.png" alt="menu icon">
+              <i class="fa-solid fa-bars"></i>
             </div>
             <div class="mobile-menu hide">
               <a class="menu-item" href="#home">Home</a>
@@ -41,18 +43,18 @@
           </div>
         </nav>
       </header>
-
-      <!-- hero section -->
-      <div class="hero-container" id="home">
+      <main>
+          <!-- hero section -->
+      <section class="hero-container" id="home">
         <img
           class="hero-image"
           src="/assets//images//hero_image.jpg"
           alt="hero image"
         />
-      </div>
+      </section>
 
       <!-- main section -->
-      <div class="popular-section">
+      <section class="popular-section">
         <div>
           <h3>Popular destinations</h3>
         </div>
@@ -70,10 +72,10 @@
             <p class="popular-p3">Greece</p>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- services section -->
-      <div class="services-container" id="services">
+      <section class="services-container" id="services">
         <div class="services-header">
           <h4>Services</h4>
         </div>
@@ -108,10 +110,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- review section -->
-      <div class="review-container" id="reviews">
+      <section class="review-container" id="reviews">
         <div>
           <h3>What Our Customers Say?</h3>
         </div>
@@ -183,10 +185,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- contact section -->
-      <div class="contact-container" id="contact">
+      <section class="contact-container" id="contact">
         <div class="form-container">
           <h4>Get in touch</h4>
           <form action="" autocomplete="on">
@@ -215,8 +217,8 @@
             </div>
           </form>
         </div>
-      </div>
-
+      </section>
+      </main>
       <!-- footer section -->
       <footer>
         <div class="footer-content">
